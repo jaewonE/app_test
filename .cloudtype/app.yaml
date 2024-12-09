@@ -1,0 +1,10 @@
+name: fastapi
+app: python@3.11
+options:
+  ports: 7230
+  start: uvicorn app:app --host=0.0.0.0 --port=7230
+context:
+  git:
+    url: https://github.com/jaewonE/app_test.git
+    branch: main
+  preset: python-fastapi
